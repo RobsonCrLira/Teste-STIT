@@ -1,19 +1,28 @@
 {
-  "name": "Teste-STIT",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "repository": "https://github.com/RobsonCrLira/Teste-STIT.git",
-  "author": "Robson Cristian de Lira <robso.crlira@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^4.4.2"
-  }
+    "name": "Teste-STIT",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "repository": "https://github.com/RobsonCrLira/Teste-STIT.git",
+    "author": "Robson Cristian de Lira <robso.crlira@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ts-node-dev --ignore-watch node_modules src/index.ts",
+        "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@typescript-eslint/eslint-plugin": "^4.30.0",
+        "@typescript-eslint/parser": "^4.30.0",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.24.2",
+        "prettier": "^2.3.2",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.4.2"
+    }
 }
