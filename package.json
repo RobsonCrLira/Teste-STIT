@@ -1,0 +1,19 @@
+{
+  "name": "Teste-STIT",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/RobsonCrLira/Teste-STIT.git",
+  "author": "Robson Cristian de Lira <robso.crlira@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  }
+}
