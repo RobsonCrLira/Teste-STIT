@@ -22,10 +22,11 @@ class AuthenticateUserServices {
         const token = sign(
             {
                 email,
+                roles: userFind.roles,
             },
             authConfig.secret,
             {
-                subject: '1',
+                subject: userFind.userId,
                 expiresIn: authConfig.tokenExpiryTimeInSeconds,
             },
         );
