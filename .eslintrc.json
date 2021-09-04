@@ -6,7 +6,8 @@
     },
     "extends": [
         "airbnb-base",
-        "prettier"
+        "prettier",
+        "plugin:prettier/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -20,7 +21,8 @@
     "plugins": [
         "@typescript-eslint",
         "prettier",
-        "import-helpers"
+        "import-helpers",
+        "eslint-plugin-import-helpers"
     ],
     "rules": {
         "prettier/prettier": "error",
@@ -39,46 +41,8 @@
             {
                 "ts": "never"
             }
-        ],
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": [
-                    "**/*.spec.ts",
-                    "src/utils/tests/*.ts"
-                ]
-            }
-        ],
-        "no-useless-constructor": "off",
-        "@typescript-eslint/no-unused-vars": [
-            "warn",
-            {
-                "argsIgnorePattern": "_"
-            }
-        ],
-        "@typescript-eslint/no-useless-constructor": "error",
-        "@typescript-eslint/camelcase": "off",
-        "import-helpers/order-imports": [
-            "warn",
-            {
-                "newlinesBetween": "always",
-                "alphabetize": {
-                    "order": "asc",
-                    "ignoreCase": true
-                }
-            }
         ]
     },
-    "overrides": [
-        {
-            "files": [
-                "*.js"
-            ],
-            "rules": {
-                "@typescript-eslint/no-var-requires": "off"
-            }
-        }
-    ],
     "settings": {
         "import/extensions": [
             ".ts",
@@ -91,9 +55,7 @@
             ]
         },
         "import/resolver": {
-            "typescript": {
-                "alwaysTryTypes": true
-            }
+            "typescript": {}
         }
     }
 }
