@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import departmentsALl from '../db/organization.json';
+import departmentsALl from '../../db/organization.json';
 import { AppError } from '../errors/AppError';
 import { IOrganization } from '../interface/IOrganization';
 

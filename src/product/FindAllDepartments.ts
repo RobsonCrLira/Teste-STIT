@@ -1,6 +1,5 @@
-import { IOrganization } from './IOrganization';
-
-import departmentsALl from '../db/organization.json';
+import departmentsALl from '../../db/organization.json';
+import { IOrganization } from '../interface/IOrganization';
 
 class FindAllDepartments {
     async execute(department: IOrganization) {
