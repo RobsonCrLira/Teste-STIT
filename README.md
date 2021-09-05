@@ -57,7 +57,7 @@ Após executar o projeto o mesmo poderá ser visualizado através da URL:
 
 <font color="RED">Para executar sem que ocorrá o `PORT` do arquivo `.env` deve estar setado!</font>
 
-## Envio de email
+## Uso da API
 
 Para acessar a rotas deverá utilizar [Insomnia](https://insomnia.rest/) ou [Postman](https://www.postman.com/) passando os valores como esta descrito abaixo
 
