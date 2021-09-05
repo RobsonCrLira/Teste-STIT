@@ -1,10 +1,13 @@
+import { IOrganization } from '../interface/IOrganization';
 import { ListProduct } from './ListProduct';
 
 class ProductServices {
-    async execute() {
+    async execute(organization: IOrganization, tags: string) {
         const listProduct = new ListProduct();
-        const product = await listProduct.search();
-        return product;
+
+        const products = await listProduct.search(organization, tags);
+
+        return products;
     }
 }
 

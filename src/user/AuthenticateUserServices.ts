@@ -22,7 +22,7 @@ class AuthenticateUserServices {
         const token = sign(
             {
                 email,
-                roles: userFind.roles,
+                roles: userFind.roles[0],
             },
             authConfig.secret,
             {
